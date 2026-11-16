@@ -1,65 +1,92 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official Privacy Policy for 10 Seconds a Day Automation, an internal educational-content publishing tool.">
-  <meta name="robots" content="index,follow">
-  <title>Privacy Policy | 10 Seconds a Day</title>
-  <style>
-  :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#224133;background:#fbfcf5}
-  *{box-sizing:border-box}
-  body{margin:0;line-height:1.7}
-  header{background:linear-gradient(125deg,#e8f3d6,#fff9e8 70%);padding:3.4rem 1.25rem;border-bottom:1px solid #e4e8d8}
-  .wrap{max-width:860px;margin:auto}
-  .brand{display:inline-flex;align-items:center;gap:.7rem;color:#27613a;font-weight:800;letter-spacing:.025em}
-  .leaf{display:inline-grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#d3e9bd}
-  h1{font-size:clamp(2.15rem,5vw,3.3rem);line-height:1.15;margin:1rem 0}
-  h2{font-size:1.35rem;color:#24533a;margin:2.1rem 0 .5rem}
-  .sub{color:#5b7463;font-size:.95rem}
-  main{padding:2rem 1.25rem 4rem}
-  p,li{font-size:1rem}
-  li{margin:.35rem 0}
-  a{color:#146c48;overflow-wrap:anywhere}
-  a:focus-visible{outline:3px solid #74b48d;outline-offset:3px}
-  footer{padding:1.5rem 1.25rem;border-top:1px solid #e4e8d8;color:#607463;font-size:.9rem}
-  .note{padding:1.1rem 1.4rem;border-left:4px solid #87b67c;background:#f0f7e8;border-radius:.3rem}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f8ed">
+<meta name="description" content="10 Seconds a Day — a personal journey through dermatitis, a family experience with rheumatoid arthritis, and a downloadable PDF sharing a simple daily routine.">
+<title>10 Seconds a Day | A Personal Journey</title>
+<style>
+:root{--pine:#214c3b;--forest:#133729;--sage:#7da68a;--cream:#faf9ed;--ivory:#fffef8;--gold:#e2bb72;--ink:#284333;--muted:#637569;--line:#e1e9d8;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--cream);color:var(--ink)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;line-height:1.65}a{color:inherit}a:focus-visible{outline:3px solid #6ca88e;outline-offset:4px}img{max-width:100%}
+.container{max-width:1160px;margin:auto;padding-left:26px;padding-right:26px}
+nav{position:relative;z-index:3;background:rgba(255,254,248,.92);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;min-height:83px;gap:20px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:1.06rem;letter-spacing:.005em;font-weight:820;white-space:nowrap}
+.logo{height:36px;width:36px;display:grid;place-items:center;background:#e0f0cc;border-radius:100%;color:var(--pine)}
+.links{display:flex;align-items:center;gap:25px;font-size:.9rem}.links a{text-decoration:none;font-weight:600}.links a:hover{text-decoration:underline}
+.cta{display:inline-block;padding:13px 23px;background:var(--pine);color:white;text-decoration:none;font-weight:750;border-radius:99px;box-shadow:0 8px 20px rgba(20,62,40,.14);transition:transform .15s,background .15s}
+.cta:hover{transform:translateY(-2px);background:#34674d}
+.hero{position:relative;isolation:isolate;min-height:630px;overflow:hidden;display:flex;align-items:center;background:linear-gradient(118deg,rgba(240,249,223,.99) 5%,rgba(250,249,235,.94) 46%,rgba(246,240,214,.74) 100%)}
+.hero:before{content:"";position:absolute;z-index:-2;inset:0;background-image:url('https://images.pexels.com/photos/4513492/pexels-photo-4513492.jpeg?auto=compress&cs=tinysrgb&w=1800');background-size:cover;background-position:center 54%;opacity:.42}
+.hero:after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(248,251,236,.97) 0%,rgba(248,251,236,.91) 44%,rgba(248,251,236,.13) 100%)}
+.hero-body{width:100%;padding-top:100px;padding-bottom:100px}
+.eyebrow{font-size:.81rem;font-weight:850;text-transform:uppercase;letter-spacing:.17em;color:#537c54;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:36px;height:2px;background:var(--gold)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;letter-spacing:-.03em;color:var(--forest)}
+h1{font-size:clamp(3.2rem,7vw,6rem);margin:24px 0 22px;max-width:820px;font-weight:700}
+h1 em{color:#648e59;font-style:normal}
+.lead{font-size:clamp(1.07rem,2vw,1.3rem);line-height:1.75;max-width:640px;color:#475c50}
+.hero-actions{display:flex;gap:15px;flex-wrap:wrap;align-items:center;margin-top:32px}
+.link-secondary{text-decoration:underline;text-underline-offset:5px;font-weight:700;color:var(--pine);padding:10px 2px}
+.pill{display:inline-block;padding:7px 14px;border-radius:100px;background:#eaf3dc;color:#467750;font-size:.78rem;letter-spacing:.07em;font-weight:800;text-transform:uppercase}
+main section{padding:94px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,7vw,100px);align-items:center}
+.section-heading{font-size:clamp(2.3rem,4.5vw,4.1rem);margin:18px 0 20px}
+p{color:#53675a}p.large{font-size:1.08rem;line-height:1.85}
+.picture{border-radius:34px;overflow:hidden;min-height:420px;box-shadow:0 22px 60px rgba(24,71,38,.13);position:relative;background:#dfe9cf}
+.picture:before{content:"";position:absolute;inset:0;background-image:url('https://images.pexels.com/photos/1154623/pexels-photo-1154623.jpeg?auto=compress&cs=tinysrgb&w=1300');background-position:center;background-size:cover}
+.picture.ra:before{background-image:url('https://images.pexels.com/photos/12623891/pexels-photo-12623891.jpeg?auto=compress&cs=tinysrgb&w=1300')}
+.quote{background:#f0f6e8;border-left:4px solid #9abd8c;padding:21px 25px;border-radius:4px 13px 13px 4px;color:#31513d;font-family:Georgia,serif;font-size:1.11rem;margin-top:25px}
+.soft{background:#f1f6ec}.soft .picture{order:2}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:23px;margin-top:45px}
+.card{padding:34px;border:1px solid var(--line);background:#fffefa;border-radius:25px;box-shadow:0 9px 28px rgba(28,78,40,.04)}
+.num{font-size:.8rem;color:#698268;font-weight:850;letter-spacing:.14em}.card h3{font-size:1.45rem;margin:15px 0 8px}
+.guide{background:#234e3a;position:relative;overflow:hidden;color:white}
+.guide:before{content:"";position:absolute;width:580px;height:580px;border-radius:50%;border:1px solid rgba(255,255,255,.1);top:-200px;right:-100px;box-shadow:0 0 0 60px rgba(255,255,255,.02),0 0 0 120px rgba(255,255,255,.015)}
+.guide .section-heading,.guide h2{color:white}.guide p{color:#d5e6d7}
+.guide .cta{background:#edf5df;color:#214b36}
+.guide .eyebrow{color:#b9ddac}
+.guide .content{position:relative;z-index:1;max-width:850px}
+.disclaimer{font-size:.89rem;color:#687a6c;max-width:880px;line-height:1.75}
+footer{background:#f7f9f2;border-top:1px solid var(--line);padding:30px 0}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot a{color:var(--pine)}.small{font-size:.85rem}
+@media(max-width:800px){.links{gap:13px}.links a:nth-child(1),.links a:nth-child(2){display:none}.two{grid-template-columns:1fr}.soft .picture{order:0}.cards{grid-template-columns:1fr}.picture{min-height:340px}.hero:after{background:linear-gradient(90deg,rgba(248,251,236,.95),rgba(248,251,236,.7))}.hero-body{padding-top:75px;padding-bottom:75px}main section{padding:62px 0}}
+</style>
 </head>
 <body>
-<header><div class="wrap">
-  <div class="brand"><span class="leaf" aria-hidden="true">🌿</span>10 Seconds a Day</div>
-  <h1>Privacy Policy</h1>
-  <p class="sub">For 10 Seconds a Day Automation &nbsp;•&nbsp; Effective November 16, 2026 &nbsp;•&nbsp; Last updated November 16, 2026</p>
+<nav><div class="container nav"><a class="brand" href="./"><span class="logo" aria-hidden="true">✦</span>10 Seconds a Day</a><div class="links"><a href="#my-story">My Story</a><a href="#family-story">Family Experience</a><a href="privacy.html">Privacy Policy</a><a class="cta" href="#guide">The PDF Guide</a></div></div></nav>
+<header class="hero"><div class="container hero-body">
+<span class="eyebrow">A personal journey worth sharing</span>
+<h1>12 Years of Searching.<br><em>10 Seconds a Day.</em></h1>
+<p class="lead">For years, I struggled with severe dermatitis. Today I follow a simple personal routine that takes about ten seconds a day. This is the story of my search, my observations, and what I chose to share.</p>
+<div class="hero-actions"><a class="cta" href="#guide">Explore the PDF Guide</a><a class="link-secondary" href="#my-story">Read My Story</a></div>
+<p class="small" style="margin-top:26px;color:#67786b">Personal experience, not a medically proven treatment or a promise of results.</p>
 </div></header>
-<main class="wrap">
-<p class="note">This policy describes an internal publishing tool for our own authorized social accounts. We do not operate a medical service or collect viewers' medical histories.</p>
-<section><h2>1. Who we are</h2>
-<p>10 Seconds a Day ("we," "us," or "our") publishes original short-form educational content based on personal and family experiences with dermatitis and rheumatoid arthritis. <strong>10 Seconds a Day Automation</strong> is an internal creation and publishing tool for our own authorized social-media business accounts.</p>
-<p>Our official guide page is <a href="https://app.lava.top/en/products/495b0903-ed60-45bb-83a3-b8ce3d7aae87" rel="noopener noreferrer">https://app.lava.top/en/products/495b0903-ed60-45bb-83a3-b8ce3d7aae87</a>.</p></section>
-<section><h2>2. Information we process</h2>
-<p>When an account owner authorizes a social-network integration, the app may process information necessary to operate it:</p>
-<ul><li>Account identifiers, usernames, board IDs, Page IDs, channel IDs, and other publishing destinations.</li>
-<li>OAuth access tokens and related technical authorization credentials.</li>
-<li>Videos, images, titles, captions, descriptions, links, and publishing schedules.</li>
-<li>Publication identifiers, statuses and limited technical execution logs.</li></ul>
-<p>For Pinterest, we intend to access only <strong>our own authorized account and boards</strong> to create and manage Pins. We do not request unrelated users' passwords, private messages or browsing histories. We do not use this application to collect viewers' health histories, payment card information, or medical records.</p></section>
-<section><h2>3. Purposes</h2>
-<p>We process information to generate original educational content, publish it to our authorized Pinterest and other social accounts, archive completed media and publication results, maintain authorized connections, troubleshoot technical issues, and protect the service against unauthorized access. We do not sell Pinterest account information or use it for unrelated advertising profiling.</p></section>
-<section><h2>4. Third-party services</h2>
-<p>Depending on enabled features, we may use Pinterest for Pin publishing; GitHub Actions to run scheduled workflows and hold encrypted configuration secrets; Google Drive to archive videos and captions; Cloudinary or an equivalent media host to serve media to publishing APIs; and Meta or YouTube to distribute content to our authorized accounts. Each provider processes data under its own terms. We share only what is needed for these operations.</p>
-<p>The PDF-guide sales page is hosted separately by <strong>Lava.top</strong>. Payments and purchases made there are processed by that service under its own policies, not by this publishing automation.</p></section>
-<section><h2>5. Security and retention</h2>
-<p>Credentials are intended to be kept in protected configuration secrets rather than public source code. We restrict publishing access to operators managing our own accounts. Account information, media archives, and publication records are retained while reasonably needed for operation, or as required by applicable law; tokens may be revoked and archived files deleted when no longer needed. Infrastructure providers may retain technical logs according to their own settings. Absolute internet security cannot be guaranteed.</p></section>
-<section><h2>6. Your choices and privacy requests</h2>
-<p>Authorized account owners can revoke connections through the relevant platform's settings. You may request access, correction, deletion or other applicable rights concerning data we control using the contact method listed below. Requests are handled subject to applicable law. Public content published on third-party platforms may also be subject to those platforms' removal procedures.</p></section>
-<section><h2>7. Children</h2>
-<p>This internal business-publishing service is not intended for children. We do not knowingly collect children's personal information through it.</p></section>
-<section><h2>8. External links and changes</h2>
-<p>Linked services, including Pinterest and Lava.top, have independent privacy policies. We may revise this policy to reflect changes to our features or processing and will update the date shown above.</p></section>
-<section><h2>9. Contact</h2>
-<p>To ask about this policy or request information about personal data under our control, contact the publisher using the available contact/support options on our official guide page:</p>
-<p><a href="https://app.lava.top/en/products/495b0903-ed60-45bb-83a3-b8ce3d7aae87" rel="noopener noreferrer">https://app.lava.top/en/products/495b0903-ed60-45bb-83a3-b8ce3d7aae87</a></p></section>
+<main>
+<section id="my-story"><div class="container two">
+<div><span class="pill">My Experience</span><h2 class="section-heading">A long road to a simpler routine.</h2>
+<p class="large">I lived with intense itching, inflammation, dryness, and painful skin for more than a decade. The experience affected my energy and everyday life, and I spent years investigating different approaches.</p>
+<p class="large">Eventually, I developed a short daily routine that I now follow. I wrote down the precise products, quantities, and steps for those who want to understand my personal experience.</p>
+<div class="quote">“What I share is a personal observation — not proof that an approach will work for anyone else.”</div>
+</div><div class="picture" role="img" aria-label="Sunlit greenery and a peaceful natural scene"></div>
+</div></section>
+<section id="family-story" class="soft"><div class="container two">
+<div class="picture ra" role="img" aria-label="Soft leaves and flowers in warm morning sunlight"></div>
+<div><span class="pill">Our Family's Story</span><h2 class="section-heading">My mother's experience with rheumatoid arthritis.</h2>
+<p class="large">My mother has rheumatoid arthritis, a diagnosis repeatedly confirmed by doctors. At difficult points, everyday movement and simple tasks were painful.</p>
+<p class="large">Our family later noticed changes in her comfort and mobility. These observations matter to us, but they do not establish a cause-and-effect relationship with any routine.</p>
+<p class="large">Rheumatoid arthritis requires appropriate medical care. We do not recommend stopping or changing prescribed treatment.</p>
+</div></div></section>
+<section><div class="container"><span class="pill">Our Approach</span><h2 class="section-heading">Simple to read. Clear about its limits.</h2>
+<div class="cards"><article class="card"><span class="num">01 / PERSONAL</span><h3>Firsthand experience</h3><p>The story of a long personal search, written from lived experience.</p></article>
+<article class="card"><span class="num">02 / PRACTICAL</span><h3>Exact routine details</h3><p>Products, quantities, photographs, and steps described in a downloadable PDF.</p></article>
+<article class="card"><span class="num">03 / RESPONSIBLE</span><h3>No cure promises</h3><p>Clear limits, individual differences, and respect for professional medical guidance.</p></article>
+</div></div></section>
+<section class="guide" id="guide"><div class="container"><div class="content"><span class="eyebrow">Downloadable PDF</span><h2 class="section-heading">The routine behind the story.</h2><p class="large">Not an online course or subscription. The guide documents the specific approach I personally follow and what our family observed. It does not establish a scientifically proven treatment for dermatitis, rheumatoid arthritis, or other autoimmune conditions.</p>
+<div class="hero-actions"><a class="cta" href="https://app.lava.top/en/products/495b0903-ed60-45bb-83a3-b8ce3d7aae87" target="_blank" rel="noopener noreferrer">See the Guide on Lava.top</a></div>
+<p class="small" style="margin-top:22px;color:#c0d8c4">Purchases, if any, take place on Lava.top, not on this site.</p></div></div></section>
+<section><div class="container"><h2 style="font-size:clamp(1.7rem,3vw,2.4rem)">Important information</h2><p class="disclaimer">The material on this site and in the guide reflects personal experiences and observations, not medical research demonstrating treatment efficacy. Individual results vary and no specific medical outcome is guaranteed. Consult a qualified clinician before making changes to medical care, especially if you have allergies, contraindications, or take prescribed medications. This guide does not recommend discontinuing prescribed treatment.</p></div></section>
 </main>
-<footer><div class="wrap">© 2026 10 Seconds a Day · Privacy Policy · Educational stories, not medical advice</div></footer>
+<footer><div class="container foot"><span class="brand"><span class="logo" aria-hidden="true">✦</span>10 Seconds a Day</span><div class="small">© 2026 10 Seconds a Day &nbsp; · &nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp; · &nbsp; <a href="https://app.lava.top/en/products/495b0903-ed60-45bb-83a3-b8ce3d7aae87">Guide on Lava.top</a></div></div></footer>
 </body></html>
